@@ -9,10 +9,9 @@ app.use(express.json());
 app.use('/user',  userRoutes); 
 app.use ("/tweet", tweetRoutes)
 
-app.get("/", (req, res) => {
-    return res.send("Hello World");
-});
-
+app.get('/', (req, res) => {
+    res.send('Hello "updated" world!');
+  });
 
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
