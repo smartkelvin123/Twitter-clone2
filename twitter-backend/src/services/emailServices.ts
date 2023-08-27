@@ -2,6 +2,8 @@ import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
 import { error } from 'console';
 require('dotenv').config()
 
+console.log(process.env.AWS_ACCESS_KEY_ID)
+
 const ses = new SESClient({});
 
 function createSendEmailCommand(
