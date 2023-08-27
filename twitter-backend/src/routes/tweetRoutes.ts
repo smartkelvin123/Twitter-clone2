@@ -35,7 +35,7 @@ router.get('/', async (req, res) => {
       user: {
         select: {
           id: true,
-          // name: true,
+          name: true,
           username: true,
           image: true,
         },
